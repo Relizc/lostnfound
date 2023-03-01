@@ -1,0 +1,10 @@
+body { 
+    background-color: #eeeeee;
+    margin: 0;
+    font-family: inter;
+}
+
+@font-face {
+    font-family: inter;
+    src: url("/assets/Inter-Regular.ttf");
+}
