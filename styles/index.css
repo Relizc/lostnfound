@@ -6,22 +6,23 @@ body {
     margin:0px;
 }
 #topDiv {
-    background-color: gray;
+    background-color: #1f1f1f;
     text-align: center;
     padding:1px;
     color: white;
     font-size: 12px;
 }
 .wrapper {
-    background-color: darkgray;
-    height: 100%;
+    background-color: #3f3f3f;
+    height: 100px;
     margin: 0px;
     width: 200px;
     border-radius: 5px;
 }
 .sidebar-options {
     text-align: center;
-    background-color: whitesmoke;
+    background-color: #5F5F5F;
+    border:auto;
     margin:0px;
     font-size: 20px;
     border-radius: 10px;
