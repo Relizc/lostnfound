@@ -1,3 +1,3 @@
-window.onload = () => {
+/* window.onload = () => {
     window.location.href = "htmls/login.html";
-}
+} */
