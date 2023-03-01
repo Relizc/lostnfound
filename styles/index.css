@@ -6,24 +6,25 @@ body {
     margin:0px;
 }
 #topDiv {
-    background-color: navy;
+    background-color: gray;
     text-align: center;
     padding:1px;
     color: white;
     font-size: 12px;
 }
 .wrapper {
-    background-color: blue;
+    background-color: darkgray;
+    height: 100%;
     margin: 0px;
     width: 200px;
+    border-radius: 5px;
 }
 .sidebar-options {
-    background-color:blue;
-    margin: 0px;
-    color: white;
-    font-size: 10px;
-    width: 100px;
-}
-.fT::first-letter {
-    color: lightskyblue;
+    text-align: center;
+    background-color: whitesmoke;
+    margin:0px;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
 }
