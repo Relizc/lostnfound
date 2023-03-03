@@ -6,12 +6,14 @@ function login(){
     xml.onreadystatechange = () =>{
         if(xml.status == 500){
             alert("Wrong username or password")
+            return;
         }
         else if(xml.status == 200){
             alert("Success!");
             parsed = JSON.parse(xml.responseText);
 
-            localStorage.setItem("token",parsed["token"])
+            localStorage.setItem("token",parsed["token"],"loginTime",parsed["time"])
+            return;
         }
     }
     xml.open("POST","https://LostnFoundAPI.abra6325.repl.co/api/login");
