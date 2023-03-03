@@ -41,10 +41,12 @@ window.onload = () => {
 
         xml = new XMLHttpRequest;
         xml.onreadystatechange = () =>{
-            if (xml.readystate != 4) return;
+            if (xml.readyState != 4) return;
+
+            d = JSON.parse(xml.responseText)
 
             if (xml.status == 404) {
-                alert("Wrong username or password")
+                whoops("Failed to log in!", d.message)
             }
 
             else if(xml.status == 200){
@@ -54,11 +56,10 @@ window.onload = () => {
                 localStorage.setItem("token",parsed["token"])
             }
         }
-        xml.open("POST","https://LostnFoundAPI.abra6325.repl.co/api/login");
+        xml.open("POST","https://lostnfoundapi.ericpooman.repl.co/api/preview-info");
 
         xml.send(JSON.stringify({
-            "username":userName,
-            "password":password
+            "username": document.getElementById("username").value
         }))
     }
 }

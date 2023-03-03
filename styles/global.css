@@ -14,8 +14,61 @@ body {
     src: url("/assets/VarelaRound-Regular.ttf");
 }
 
-.whoops {
-    width: 10%;
-    background-color: #cc0000;
+@keyframes smooth-appear {
+    to {
+        top: 10%;
+        opacity: 1;
+    }
+  }
 
+.whoops {
+    width: 30%;
+    height: 5%;
+    background-color: #ff1919;
+    box-shadow: 3px 3px 20px black;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    position: fixed;
+    display: flex;
+    opacity: 0;
+    
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+
+    left: 50%;
+    top: -10%;
+
+    transform: translate(-50%, -50%);
+
+    animation: smooth-appear 1s ease forwards;
+
+}
+
+.whoops .whoops-icon {
+    font-size: 16px;
+}
+
+.whoops .title {
+    font-weight: bold;
+}
+
+.whoops .msgarea {
+    float: center;
+    text-align: center;
+}
+
+.whoops .msgarea p {
+    margin: auto;
+}
+
+.whoops .msgarea a {
+    color: white;
+    transition: color 0.2s ease-in-out;
+}
+
+.whoops .msgarea a:hover {
+    color: #cccccc;
+    transition: color 0.2s ease-in-out;
 }
