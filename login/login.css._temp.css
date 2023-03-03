@@ -10,6 +10,7 @@ body {
 
 .login-box {
     padding: 16px;
+    margin: 36vh auto;
     background-color: #eee;
     border-radius: 8px;
     border-width: 2px;
@@ -17,10 +18,61 @@ body {
 
     width: 15%;
     height: 5%;
-    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+
+    text-align: center;
+    
+}
+
+.login-input {
+    width: 300px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+    border-style: solid;
+    outline: none;
+    font-family: varela;
+
+    height: 16px;
+    width: 256px;
+
+    
+}
+
+.login-input:disabled {
+    color: #777777;
+    border-color: #777777;
+    background-color: #dddddd;
+    cursor: not-allowed;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.login-button {
+    height: 32px;
+    padding: auto 8px;
+    color: #777777;
+
+    width: 75px;
+    
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #777777;
+    font-family: varela;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.login-button:disabled {
+    background-color: #eeeeee;
+    cursor: auto;
+    color: #777777;
 }
 
 .login-box p.title {

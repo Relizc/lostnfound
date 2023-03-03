@@ -13,3 +13,9 @@ body {
     font-family: varela;
     src: url("/assets/VarelaRound-Regular.ttf");
 }
+
+.whoops {
+    width: 10%;
+    background-color: #cc0000;
+
+}
