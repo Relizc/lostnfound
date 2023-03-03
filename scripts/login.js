@@ -1,5 +1,12 @@
 function login(){
-    var parsed = getFile("/us");
+    var apiPage = "https://LostnFoundAPI.abra6325.repl.co/api/login";
+    
+    xml = new XMLHttpRequest;
+    xml.onreadystatechange = () =>{
+        if(xml.status = 500){
+
+        }
+    }
     
 }
 function getFile(filepath){
@@ -7,9 +14,6 @@ function getFile(filepath){
         return data;
     });
 }
-<<<<<<< HEAD
-=======
-
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -18,5 +22,4 @@ function getRandomInt(min, max) {
 
 window.onload = () => {
     document.body.style = "background-image: url(\"/assets/wp" + getRandomInt(0, 2) + ".jpg\"); background-size: cover;"
->>>>>>> 35ef62065ed8318d0f0effde170c5bb53791f4a0
 }

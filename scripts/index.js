@@ -1,3 +1,5 @@
-/* window.onload = () => {
-    window.location.href = "htmls/login.html";
-} */
+window.onload = () => {
+    if(localStorage.getItem("token")==null){
+        window.location = "/login/index.html"
+    }
+}
