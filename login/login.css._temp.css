@@ -8,6 +8,28 @@ body {
     justify-content: center ;
 }
 
+.login-box {
+    padding: 16px;
+    background-color: #eee;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+
+    width: 15%;
+    height: 5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-box p.title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
 img.top-logo {
     padding: 4px;
 }
