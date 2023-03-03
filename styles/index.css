@@ -1,30 +1,27 @@
-h1, h2, h3, h4, h5, h6, p {
-    font-family: sans-serif;
-}
-
 body {
     margin:0px;
 }
-#topDiv {
-    background-color: gray;
+
+.topnav {
+    background-color: #333;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
     text-align: center;
-    padding:1px;
+    padding: 15px 15px;
+    font-size: 17px;
+    transition: all 200ms ease;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #0452aa;
     color: white;
-    font-size: 12px;
-}
-.wrapper {
-    background-color: darkgray;
-    height: 100%;
-    margin: 0px;
-    width: 200px;
-    border-radius: 5px;
-}
-.sidebar-options {
-    text-align: center;
-    background-color: whitesmoke;
-    margin:0px;
-    font-size: 20px;
-    border-radius: 10px;
-    height: 50px;
-    width: 200px;
 }
