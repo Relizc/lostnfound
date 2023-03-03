@@ -1,10 +1,21 @@
 body { 
     background-color: #eeeeee;
     margin: 0;
-    font-family: inter;
+    font-family: varela;
 }
 
 @font-face {
     font-family: inter;
     src: url("/assets/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: varela;
+    src: url("/assets/VarelaRound-Regular.ttf");
+}
+
+.whoops {
+    width: 10%;
+    background-color: #cc0000;
+
 }
