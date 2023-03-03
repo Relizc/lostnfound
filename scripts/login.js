@@ -1,7 +1,10 @@
 function login(){
-    var parsed;
+    var parsed = getFile("/us");
+    
+}
+function getFile(filepath){
     fetch("/users.json").then(response => response.json()).then(data =>{
-        parsed = data
-        console.log(parsed);
+        return data;
     });
+}
 }
