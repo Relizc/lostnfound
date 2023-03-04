@@ -5,11 +5,6 @@ body {
 }
 
 @font-face {
-    font-family: inter;
-    src: url("/assets/Inter-Regular.ttf");
-}
-
-@font-face {
     font-family: varela;
     src: url("/assets/VarelaRound-Regular.ttf");
 }
