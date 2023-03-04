@@ -38,7 +38,14 @@ body {
     height: 16px;
     width: 256px;
 
-    
+    transition: background-color 0.2s ease-in-out;
+    transition: border-color 0.2s ease;
+}
+
+.login-input-error {
+    color: red;
+    border-color: red;
+    transition: border-color 0.2s ease;
 }
 
 .login-input:disabled {
@@ -73,6 +80,7 @@ body {
     background-color: #eeeeee;
     cursor: auto;
     color: #777777;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .login-box p.title {
