@@ -2,12 +2,6 @@ body {
     background-color: #eeeeee;
 }
 
-.top {
-    background-color: rgb(187, 187, 187);
-    display: flex;
-    justify-content: center ;
-}
-
 .login-box {
     padding: 16px;
     margin: 36vh auto;
