@@ -15,15 +15,7 @@ window.onload = () => {
             }
             else if(xml.status == 200){
                 d = JSON.parse(xml.responseText);
-                Email.send({
-                    Host: "smtp.gmail.com",
-                    Username: "abra6325@outlook.com",
-                    Password: "Abraham632580",
-                    To: email.value,
-                    From: "abra6325@outlook.com",
-                    Subject: "VERIFICATION CODE!!!!",
-                    Body: verification + " EXPIRES 60 SECOND!!!",
-                  })
+                
                 whoops("Success!",d.message);
             }
         }
@@ -34,6 +26,41 @@ window.onload = () => {
             "email":email.value
         }))
     }
-    username = document.getElementById("username");
+    submit.onclick = () => {
+        forceCloseWhoops();
+        email = document.getElementById("email");
+        code = document.getElementById("verify");
+        username = document.getElementById("username");
+        pass1 = document.getElementById("password");
+        pass2 = document.getElementById("confirmpass");
+        if(email.value == ""||toString(code.value)==""||username.value==""||pass1.value==""||pass2.value==""){
+            whoops("Error!","One of the fields are not filled out!");
+            
+        }
+        else{
+            if(pass1.value == pass2.value){
+                xml.onreadystatechange = () => {
+                    if(xml.status == 500){
+                        whoops("Error!","Invalid Email");
+                    }else if(xml.status == 403){
+                        whoops("Error!","Invalid code");
+                    }else if (xml.status == 200){
+                        d = JSON.parse(xml.responseText);
+                        window.location = "/login/index.html";
+                    }
+                }
+                xml.open("POST","https://LostnFoundAPI.ericpooman.repl.co/api/register");
+                xml.send(JSON.stringify({
+                    "email":email.value,
+                    "code":toString(code.value),
+                    "username":username.value,
+                    "password":pass1.value
+                }))
+            }else{
+                whoops("Error!","The two passwords are different")
+            }
+        }
+    }
+    
 
 }
